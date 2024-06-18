@@ -1,0 +1,123 @@
+import java.util.Scanner;
+
+public class student_grade_tracker {
+    public static void main(String[] args) {
+        Scanner scn=new Scanner(System.in);
+
+        String grade;
+        int total;
+        int avg;
+        
+        System.out.println("Enter student name");
+        String name=scn.next();
+        System.out.println("Enter subject marks");
+        System.out.println("Telugu");
+        double t=scn.nextDouble();
+        System.out.println("English");
+        double e=scn.nextDouble();
+        System.out.println("Maths");
+        double m=scn.nextDouble();
+        System.out.println("Physics");
+        double p=scn.nextDouble();
+        System.out.println("Chemistry");
+        double c=scn.nextDouble();
+        
+         total=(int) ((int)t+e+m+p+c);
+        
+         avg=total/5;
+        
+
+        if(t>=40&&e>=40&&m>=40&&p>=40&&c>=40){
+        if (avg>=95) {
+            System.out.println("------------------------------");
+             grade="A+";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=94&&avg>90) {
+            System.out.println("------------------------------");
+             grade="A";
+             System.out.println("Name :"+name);
+             System.out.println("Total :"+total);
+             System.out.println("Average :"+avg);
+             System.out.println("Grade :"+grade);
+             System.out.println("Status :Pass");
+        }else if (avg<=90&&avg>85) {
+            System.out.println("------------------------------");
+            grade="B+";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=85&&avg>70) {
+            System.out.println("------------------------------");
+            grade="B";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=70&&avg>65) {
+            System.out.println("------------------------------");
+            grade="C+";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=65&&avg>60) {
+            System.out.println("------------------------------");
+            grade="C";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=60&&avg>55) {
+            System.out.println("------------------------------");
+            grade="D+";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=55&&avg>50) {
+            System.out.println("------------------------------");
+            grade="D";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=50&&avg>45) {
+            System.out.println("------------------------------");
+            grade="E+";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }else if (avg<=45&&avg>=40) {
+            System.out.println("------------------------------");
+            grade="E";
+            System.out.println("Name :"+name);
+            System.out.println("Total :"+total);
+            System.out.println("Average :"+avg);
+            System.out.println("Grade :"+grade);
+            System.out.println("Status :Pass");
+        }
+    }else{
+        System.out.println("------------------------------");
+        System.out.println("Name :"+name);
+        System.out.println(total);
+        System.out.println("Grade :F");
+        System.out.println("Status :Fail");
+        
+    }
+    
+    scn.close();
+    }
+}
